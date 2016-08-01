@@ -1,0 +1,117 @@
+/* Style Sheet originally created for the following:			*/
+/* Theme Name: LazrWeb Design Template 1 (v1.0)						*/
+/* Portal package: LazrWeb.com								*/
+/* Creation Date: 01/06/2005									
+/* ------------------------------------------------------------ */
+
+.head1 					{ color: #003F80; font-size: 16px; font-weight: bold; font-family: Arial, Helvetica, Verdana, sans-serif; MARGIN-TOP: 10px; MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px}
+.head2 					{ color: #003F80; font-weight: bold; font-size: 14px; font-family: Arial, Helvetica, Verdana, sans-serif; MARGIN-LEFT: 10px }
+.head3 					{ color: #003F80; font-weight: bold; font-size: 13px; font-family: Arial, Helvetica, Verdana, sans-serif; MARGIN-LEFT: 10px }
+
+P {
+	MARGIN-TOP: 10px; MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px; TEXT-ALIGN: default
+}
+
+H1 					{ color: #FFFFFF; font-size: 16px; font-weight: bold; font-family: Arial, Helvetica, Verdana, sans-serif; }
+H2 					{ color: #FFFFFF; font-weight: bold; font-size: 14px; font-family: Arial, Helvetica, Verdana, sans-serif }
+H3 					{ color: #000000; font-weight: bold; font-size: 13px; font-family: Arial, Helvetica, Verdana, sans-serif }
+blockquote 					{ color: #000000; font-weight: normal; font-size: 12px; font-family: Arial, Helvetica, Verdana, sans-serif }
+footer 					{ color: #FFFFFF; font-weight: normal; font-size: 10px; font-family: Arial, Helvetica, Verdana, sans-serif }
+footer2 					{ color: #375176; font-weight: normal; font-size: 10px; font-family: Arial, Helvetica, Verdana, sans-serif }
+
+.headertext 		{ color: black; font-weight: bold; }
+.navtext 			{ color: white; font-weight: bold; }
+.footer 			{ color: white; font-size: 9px; font-weight: bold; font-family: verdana, arial, sans-serif; }
+
+/* Custom theme styles */
+
+body				{ background-color: #ffffff; }
+
+.box				{ color: #000; scrollbar-face-color: #0066FF; scrollbar-highlight-color: #00ccff; scrollbar-shadow-color: #003366; scrollbar-track-color: #003366  }
+
+A:link				{ color: #003F80; font-weight: bold 
+}
+A:visited			{ color: #003F80; font-weight: bold 
+}
+A:hover				{ color: #003F80; font-weight: bold 
+}
+
+A.navbar:link 	   	{ color: #FFFFFF; font-weight: bold; font-size: 10px; line-height: 12px; font-family: Verdana, Helvetica, Arial, sans-serif; text-decoration: none }
+A.navbar:visited    { color: #d7d8e1; font-weight: bold; font-size: 10px; line-height: 12px; font-family: Verdana, Helvetica, Arial, sans-serif; text-decoration: none }
+A.navbar:hover    	{ color: #FFFF00; font-weight: bold; font-size: 10px; line-height: 12px; font-family: Verdana, Helvetica, Arial, sans-serif; text-decoration: none }
+
+TD					{ color: #000000; font-size: 13px; font-family: Arial, Helvetica, Verdana, sans-serif }
+
+TD.maincolor { background-color: #003F80
+}
+
+TD.bold				{ color: #000000; font-weight: bold; font-size: 13px; font-family: Arial, Helvetica, Verdana, sans-serif }
+H3top 					{ color: #FFFFFF; font-weight: bold; font-size: 13px; font-family: Arial, Helvetica, Verdana, sans-serif }
+
+
+input				{ color: #000033; background-color: #dde3ef;  font-family: Verdana, Helvetica, sans-serif;  font-size: 10px;  font-weight: plain; }
+
+TEXTAREA			{ color: #000033; font-size: 10px; font-family: Verdana, Helvetica, Arial; background-color:  #dde3ef }
+
+select				{ color: #000033; font-weight: normal; font-size: 10px; font-family: Verdana, Helvetica, sans-serif; background-color: #dde3ef; text-indent: 10px; }
+
+A.leftnav:link				{ color: #003F80; font-size: 12px; font-weight: bold;  font-family: Arial, Helvetica, Verdana; text-decoration: underline }
+A.leftnav:visited			{ color: #003F80; font-size: 12px; font-weight: bold;  font-family: Arial, Helvetica, Verdana; text-decoration: underline }
+A.leftnav:hover				{ color: #3163CE; font-size: 12px; font-weight: bold;  font-family: Arial, Helvetica, Verdana; text-decoration: none }
+
+TD.eileenbox { background-color: #003F80
+}
+
+table.eileenborder { border-color: #003F80; border-style: solid; border-width: 1px
+}
+
+.boxtext {
+       FONT-SIZE: 11px; COLOR: #000000;  TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica, Verdana, sans-serif; TEXT-ALIGN: default
+}
+.text2 {
+       FONT-SIZE: 11px; COLOR: #ffffff; TEXT-INDENT: 0px; FONT-WEIGHT: bold; FONT-FAMILY: Arial, Helvetica, Verdana, sans-serif; TEXT-ALIGN: default
+}
+
+.companyname {
+       FONT-SIZE: 14px; COLOR: #ffffff; TEXT-INDENT: 0px; FONT-WEIGHT: bold; FONT-FAMILY: Arial, Helvetica, Verdana, sans-serif; TEXT-ALIGN: default
+}
+
+SPAN.sitename		{ color: #000000; font-weight: bold; font-size: 10px; font-family: Arial, Helvetica, Verdana, sans-serif }
+SPAN.postedBy		{ color: #000000; font-size: 8px; font-family: Arial, Helvetica, Verdana, sans-serif }
+SPAN.copyRight		{ color: #000000; font-size: 10px; font-family: Arial, Helvetica, Verdana, sans-serif }
+SPAN.display		{ color: #dde3ef; font-size: 10px; font-family: Arial, Helvetica, Verdana, sans-serif }
+
+
+DT {
+	FONT-SIZE: 11px; COLOR: #000000; TEXT-INDENT: 0px; FONT-WEIGHT: bold; FONT-FAMILY: Arial, Helvetica, Verdana, sans-serif; MARGIN-TOP: 10px; MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px; TEXT-ALIGN: default
+}
+
+DD {
+	FONT-SIZE: 11px; COLOR: #000000; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica, Verdana, sans-serif; MARGIN-TOP: 10px; MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px; TEXT-ALIGN: default
+}
+
+A.topnav:link				{ color: #FFFFFF; font-size: 12px; line-height: 14px; font-weight: bold;  font-family: Arial, Helvetica, Verdana; text-decoration: none }
+A.topnav:visited			{ color: #F0F0F0; font-size: 12px; line-height: 14px; font-weight: bold;  font-family: Arial, Helvetica, Verdana; text-decoration: none }
+A.topnav:hover				{ color: #FFFF00; font-size: 12px; line-height: 14px; font-weight: bold;  font-family: Arial, Helvetica, Verdana; text-decoration: underline overline }
+
+
+
+
+.style2 {
+	color: #003F80;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Tahoma;
+}
+
+/*SavvySoftWorks*/
+.logo {
+  color: #003F80;
+  font-weight: bold;
+  font-size: 2em;
+  width: 201px;
+  padding-left: 1em;
+  margin-top: 0.5em;
+}
+
+
