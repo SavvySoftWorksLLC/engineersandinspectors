@@ -46,9 +46,22 @@
 
 $darktext: #333333;
 $lighttext: #FFFFFF;
-// $color: #ECC561;
-// $color: #8DA9C4;
-$color: #387D7A;
+// $color: #387D7A;
+$color: #488286;
+
+.material-icons {
+  color: $lighttext;
+}
+
+ /*
+  When creating your CSS selector,
+  change "brown" to something of your choosing
+*/
+.waves-effect.waves-teal .waves-ripple {
+ /* The alpha value allows the text and background color
+ of the button to still show through. */
+  background-color: rgba(72, 130, 134, 0.8);
+}
 
 body {
   background-color: $color;
@@ -81,6 +94,9 @@ main {
   a {
     color: $lighttext;
   }
+  a:hover {
+    color: lighten($color, 50%);
+  }
 }
 
 nav {
@@ -92,6 +108,10 @@ nav {
 .nav {
   background-color: $color;
   color: $lighttext;
+}
+
+ul.side-nav.fixed ul.collapsible-accordion a.collapsible-header {
+  padding-left: 32px;
 }
 
 .content {
@@ -108,6 +128,8 @@ nav {
 }
 
 #contactBtn {
+  // position: fixed;
+  // width: 100%;
   background-color: $lighttext;
   color: $color;
 }
@@ -116,6 +138,15 @@ nav {
   background-color: $color;
   color: $lighttext;
   box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.7), 0 1px 5px 0 rgba(255, 255, 255, 0.7), 0 3px 1px -2px rgba(255, 255, 255, 0.7);
+}
+
+.logobar {
+  margin: 0 auto;
+  padding-bottom: 1em;
+  background-color: $lighttext;
+  .logos img {
+    padding: 1em;
+  }
 }
 
 .footer {
