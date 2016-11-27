@@ -17,19 +17,14 @@
   </head>
 
   <body>
-    <%= partial "views/header" %>
-    <div class="row">
-      <div class="nav col s12 m2">
-        <%= partial "views/nav" %>
-      </div>
-      <div class="content col s12 m8">
-        <%= yield %>
-      </div>
-      <div class="contact col s12 m2">
-        <%= partial "views/contact" %>
-      </div>
-    </div>
-    <%= partial "views/footer" %>
+    <%= partial "views/nav" %>
+    <main>
+      <%= partial "views/header" %>
+      
+      <%= yield %>
+
+      <%= partial "views/footer" %>
+    </main>
 
     <%= javascript_include_tag :all %>
   </body>

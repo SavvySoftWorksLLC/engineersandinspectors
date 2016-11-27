@@ -46,15 +46,41 @@
 
 $darktext: #333333;
 $lighttext: #FFFFFF;
-$color: #ECC561;
+// $color: #ECC561;
+// $color: #8DA9C4;
+$color: #387D7A;
 
 body {
   background-color: $color;
 }
 
+.content {
+  color: $lighttext;
+}
+
+.content_container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+main {
+  @media #{$large-and-up} {
+    padding-left: 300px;
+  }
+  
+}
+
 .header {
+  margin: 0 auto;
   background-color: $color;
   color: $lighttext;
+  text-align: center;
+  h1 {
+    color: $lighttext;
+  }
+  a {
+    color: $lighttext;
+  }
 }
 
 nav {
@@ -75,60 +101,83 @@ nav {
 }
 
 .contact {
+  margin: 0 auto;
+  background-color: $color;
+  color: $darktext;
+  text-align: center;
+}
+
+#contactBtn {
+  background-color: $lighttext;
+  color: $color;
+}
+
+#contactBtn:hover {
   background-color: $color;
   color: $lighttext;
+  box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.7), 0 1px 5px 0 rgba(255, 255, 255, 0.7), 0 3px 1px -2px rgba(255, 255, 255, 0.7);
 }
 
-/* Text Inputs + Textarea
-   ========================================================================== */
-/* Style Placeholders */
-::-webkit-input-placeholder {
-  color: #EDEDED; }
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: #EDEDED; }
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #EDEDED; }
-
-:-ms-input-placeholder {
-  color: #EDEDED; }
-
-/* Text inputs */
-input:not([type]),
-input[type=text],
-input[type=password],
-input[type=email],
-input[type=url],
-input[type=time],
-input[type=date],
-input[type=datetime],
-input[type=datetime-local],
-input[type=tel],
-input[type=number],
-input[type=search],
-textarea.materialize-textarea {
-  border-bottom: 1px solid #EDEDED;
+.footer {
+  color: $lighttext;
+  a {
+    color: $lighttext;
+  }
+  a:hover {
+    color: lighten($color, 50%);
+  }
 }
 
-input:not([type]):focus:not([readonly]),
-input[type=text]:focus:not([readonly]),
-input[type=password]:focus:not([readonly]),
-input[type=email]:focus:not([readonly]),
-input[type=url]:focus:not([readonly]),
-input[type=time]:focus:not([readonly]),
-input[type=date]:focus:not([readonly]),
-input[type=datetime]:focus:not([readonly]),
-input[type=datetime-local]:focus:not([readonly]),
-input[type=tel]:focus:not([readonly]),
-input[type=number]:focus:not([readonly]),
-input[type=search]:focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #FFFFFF;
-  box-shadow: 0 1px 0 0 #EDEDED;
-}
+// /* Text Inputs + Textarea
+//    ========================================================================== */
+// /* Style Placeholders */
+// ::-webkit-input-placeholder {
+//   color: #EDEDED; }
+
+// :-moz-placeholder {
+//   /* Firefox 18- */
+//   color: #EDEDED; }
+
+// ::-moz-placeholder {
+//   /* Firefox 19+ */
+//   color: #EDEDED; }
+
+// :-ms-input-placeholder {
+//   color: #EDEDED; }
+
+// /* Text inputs */
+// input:not([type]),
+// input[type=text],
+// input[type=password],
+// input[type=email],
+// input[type=url],
+// input[type=time],
+// input[type=date],
+// input[type=datetime],
+// input[type=datetime-local],
+// input[type=tel],
+// input[type=number],
+// input[type=search],
+// textarea.materialize-textarea {
+//   border-bottom: 1px solid #EDEDED;
+// }
+
+// input:not([type]):focus:not([readonly]),
+// input[type=text]:focus:not([readonly]),
+// input[type=password]:focus:not([readonly]),
+// input[type=email]:focus:not([readonly]),
+// input[type=url]:focus:not([readonly]),
+// input[type=time]:focus:not([readonly]),
+// input[type=date]:focus:not([readonly]),
+// input[type=datetime]:focus:not([readonly]),
+// input[type=datetime-local]:focus:not([readonly]),
+// input[type=tel]:focus:not([readonly]),
+// input[type=number]:focus:not([readonly]),
+// input[type=search]:focus:not([readonly]),
+// textarea.materialize-textarea:focus:not([readonly]) {
+//   border-bottom: 1px solid #FFFFFF;
+//   box-shadow: 0 1px 0 0 #EDEDED;
+// }
 
 .footer {
   text-align: center;
