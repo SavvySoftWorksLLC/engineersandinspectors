@@ -110,6 +110,12 @@ nav {
   color: $lighttext;
 }
 
+@media #{$medium-and-down}{
+  .side-nav a {
+      padding: 0 32px;
+  }
+}
+
 ul.side-nav.fixed ul.collapsible-accordion a.collapsible-header {
   padding-left: 32px;
 }
