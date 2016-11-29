@@ -77,14 +77,12 @@ body {
 }
 
 main {
-  @media #{$large-and-up} {
-    padding-left: 300px;
-  }
   
 }
 
 .header {
   margin: 0 auto;
+  padding-bottom: 1em;
   background-color: $color;
   color: $lighttext;
   text-align: center;
@@ -133,11 +131,13 @@ ul.side-nav.fixed ul.collapsible-accordion a.collapsible-header {
   text-align: center;
 }
 
+nav .brand-logo {
+  font-size: 1.5em;
+  padding: 1em;
+}
+
 #contactBtn {
-  // position: fixed;
-  // width: 100%;
-  background-color: $lighttext;
-  color: $color;
+  
 }
 
 #contactBtn:hover {
@@ -218,5 +218,15 @@ ul.side-nav.fixed ul.collapsible-accordion a.collapsible-header {
 
 .footer {
   text-align: center;
+}
+
+.home_page_head {
+  ul li {
+    display: inline;
+    text-decoration: none;
+    padding: 1em;
+    text-align: center;
+    color: $color;
+  }
 }
 
