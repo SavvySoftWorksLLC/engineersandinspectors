@@ -15,4 +15,15 @@ $(document).ready(function(){
 
   $(".dropdown-button").dropdown();
 
+  // jQuery Scroll Animations
+  $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'))
+      if( target.length ) {
+          event.preventDefault()
+          $('html, body').stop().animate({
+              scrollTop: target.offset().top
+          }, 250);
+      }
+  })
+
 })
