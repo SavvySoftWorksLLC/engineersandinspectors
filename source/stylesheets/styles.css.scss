@@ -71,10 +71,14 @@ body {
 
 .content {
   color: $lighttext;
+  height:100%;
+  width:100%
 }
 
 .content_container {
   margin: 0 auto;
+  height: 100%;
+  width: 100%;
 }
 
 main {
@@ -83,6 +87,14 @@ main {
 
 .bold-color {
   color: $color;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.text-right {
+  text-align:right;
 }
 
 blockquote {
@@ -148,6 +160,7 @@ ul.side-nav.fixed ul.collapsible-accordion a.collapsible-header {
   padding: 2em;
   background-color: #FFFFFF;
   color: $darktext;
+  height: 100%;
 }
 
 .contact {
@@ -189,6 +202,7 @@ nav .brand-logo {
   a:hover {
     color: lighten($color, 50%);
   }
+  display: block;
 }
 
 .footer {
@@ -226,10 +240,13 @@ nav .brand-logo {
   // border-right: 2px solid $color;
   margin-top: 0;
   padding-top: 0;
+  z-index: 0;
+  height: 100%;
 }
 
 .table-of-contents li {
-  padding:2px 0
+  padding:2px 0;
+  z-index: 0;
 }
 
 .table-of-contents a {
@@ -269,9 +286,23 @@ nav .brand-logo {
   li {
     padding-right: 2em;
   }
-  }
-  
+  }  
 }
+
+table {
+  width: 60%;
+  border: 1px solid $color;
+  margin: 0 auto;
+}
+
+td {
+  padding-right: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #EEEEEE;
+}
+
 
 .enc li {
     padding: 0em 1em 0em 1em
