@@ -63,6 +63,10 @@ $color: #004d40;
   background-color: rgba(72, 130, 134, 0.8);
 }
 
+html, body, .block {
+  height: 100%;
+  }
+
 body {
   background-color: $color;
   font-family: Helvetica, sans-serif;
@@ -73,7 +77,6 @@ body {
   color: $lighttext;
   height:100%;
   width:100%;
-  z-index: -3;
 }
 
 .content_container {
@@ -200,9 +203,7 @@ nav .brand-logo {
     color: lighten($color, 50%);
   }
   display: block;
-  position: relative;
-  z-index: -1;
-  
+  position: relative; 
 }
 
 
@@ -237,7 +238,6 @@ nav .brand-logo {
   // border-right: 2px solid $color;
   margin-top: 0;
   padding-top: 0;
-  z-index: -2;
 }
 
 .table-of-contents li {
@@ -265,6 +265,18 @@ nav .brand-logo {
   font-weight:500;
   padding-left:18px;
   border-left:2px solid #ea4a4f;
+}
+
+.pin-top {
+  position: relative;
+}
+
+.pin-bottom {
+  position: relative;
+}
+
+.pinned {
+  position: fixed !important;
 }
 
 .enc_nav {
@@ -327,3 +339,5 @@ tr:nth-child(even) {
     color: $color;
   }
 }
+
+

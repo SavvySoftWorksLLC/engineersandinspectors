@@ -15,8 +15,7 @@ $(document).ready(function(){
 
   $(".dropdown-button").dropdown();
 
-  $('.scrollspy').scrollSpy()
-  $('.scrollspy').scrollOffset();
+  $('.scrollspy').scrollSpy();
 
 
 })
@@ -31,3 +30,19 @@ $('a[href^="#"]').on('click', function(event) {
         }, 250);
     }
 })
+
+//jquery scroll handler
+$(document).ready(function(){
+  //var header_h = document.getElementsByClassName('header').height;
+  var footer_h = $('.footer').height()
+  var ul_h = $('.toc-wrapper').height()
+  var header_h = $('.header').outerHeight()
+  var window_h = $(window).height()
+
+  $('.toc-wrapper').pushpin({
+    top: header_h + 20,
+    offset: 0,
+    // bottom should stop at the entire window height - (footer height + table of contents height)
+    bottom: 3000
+  });
+});
