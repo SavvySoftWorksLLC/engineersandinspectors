@@ -72,7 +72,8 @@ body {
 .content {
   color: $lighttext;
   height:100%;
-  width:100%
+  width:100%;
+  z-index: -3;
 }
 
 .content_container {
@@ -91,10 +92,6 @@ main {
 
 .text-center {
   text-align:center;
-}
-
-.text-right {
-  text-align:right;
 }
 
 blockquote {
@@ -194,7 +191,7 @@ nav .brand-logo {
 }
 
 .footer {
-  clear: all;
+  clear: both;
   color: $lighttext;
   a {
     color: $lighttext;
@@ -203,11 +200,11 @@ nav .brand-logo {
     color: lighten($color, 50%);
   }
   display: block;
+  position: relative;
+  z-index: -1;
+  
 }
 
-.footer {
-
-}
 
 .home_page_head {
   ul li {
@@ -240,13 +237,11 @@ nav .brand-logo {
   // border-right: 2px solid $color;
   margin-top: 0;
   padding-top: 0;
-  z-index: 0;
-  height: 100%;
+  z-index: -2;
 }
 
 .table-of-contents li {
-  padding:2px 0;
-  z-index: 0;
+  padding:2px 0px;
 }
 
 .table-of-contents a {
@@ -290,13 +285,23 @@ nav .brand-logo {
 }
 
 table {
-  width: 60%;
+  width: 100%;
   border: 1px solid $color;
   margin: 0 auto;
 }
 
 td {
   padding-right: 10px;
+}
+
+.table-header {
+  background-color: #F7AA47;
+  text-align:center;
+  border-radius: 0;
+}
+
+.fee {
+  text-align: right;
 }
 
 tr:nth-child(even) {
