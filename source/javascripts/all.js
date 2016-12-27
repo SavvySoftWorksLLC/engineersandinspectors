@@ -20,7 +20,6 @@ $(document).ready(function(){
   var footer_h = $('.footer').height()
   var header_h = $('.header').outerHeight()
   var window_h = $('.content').height()
-  console.log(window_h)
 
   $('.toc-wrapper').pushpin({
     top: header_h + 20,
