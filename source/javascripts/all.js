@@ -17,6 +17,16 @@ $(document).ready(function(){
 
   $('.scrollspy').scrollSpy();
 
+  var footer_h = $('.footer').height()
+  var header_h = $('.header').outerHeight()
+  var window_h = $('.content').height()
+  console.log(window_h)
+
+  $('.toc-wrapper').pushpin({
+    top: header_h + 20,
+    bottom: window_h - footer_h,
+    offset: header_h+ 20
+  });
 
 })
 
@@ -30,19 +40,3 @@ $('a[href^="#"]').on('click', function(event) {
         }, 250);
     }
 })
-
-//jquery scroll handler
-$(document).ready(function(){
-  //var header_h = document.getElementsByClassName('header').height;
-  var footer_h = $('.footer').height()
-  var ul_h = $('.toc-wrapper').height()
-  var header_h = $('.header').outerHeight()
-  var window_h = $(window).height()
-
-  $('.toc-wrapper').pushpin({
-    top: header_h + 20,
-    offset: 0,
-    // bottom should stop at the entire window height - (footer height + table of contents height)
-    bottom: 3000
-  });
-});
