@@ -63,6 +63,10 @@ $color: #004d40;
   background-color: rgba(72, 130, 134, 0.8);
 }
 
+html, body, .block {
+  height: 100%;
+  }
+
 body {
   background-color: $color;
   font-family: Helvetica, sans-serif;
@@ -72,7 +76,7 @@ body {
 .content {
   color: $lighttext;
   height:100%;
-  width:100%
+  width:100%;
 }
 
 .content_container {
@@ -91,10 +95,6 @@ main {
 
 .text-center {
   text-align:center;
-}
-
-.text-right {
-  text-align:right;
 }
 
 blockquote {
@@ -194,7 +194,7 @@ nav .brand-logo {
 }
 
 .footer {
-  clear: all;
+  padding-bottom: 2em;
   color: $lighttext;
   a {
     color: $lighttext;
@@ -203,11 +203,9 @@ nav .brand-logo {
     color: lighten($color, 50%);
   }
   display: block;
+  position: relative; 
 }
 
-.footer {
-
-}
 
 .home_page_head {
   ul li {
@@ -240,13 +238,10 @@ nav .brand-logo {
   // border-right: 2px solid $color;
   margin-top: 0;
   padding-top: 0;
-  z-index: 0;
-  height: 100%;
 }
 
 .table-of-contents li {
-  padding:2px 0;
-  z-index: 0;
+  padding:2px 0px;
 }
 
 .table-of-contents a {
@@ -272,6 +267,18 @@ nav .brand-logo {
   border-left:2px solid #ea4a4f;
 }
 
+.pin-top {
+  position: relative;
+}
+
+.pin-bottom {
+  position: relative;
+}
+
+.pinned {
+  position: fixed !important;
+}
+
 .enc_nav {
   font-size: 1.2em;
   ul {
@@ -290,13 +297,23 @@ nav .brand-logo {
 }
 
 table {
-  width: 60%;
+  width: 100%;
   border: 1px solid $color;
   margin: 0 auto;
 }
 
 td {
   padding-right: 10px;
+}
+
+.table-header {
+  background-color: #F7AA47;
+  text-align:center;
+  border-radius: 0;
+}
+
+.fee {
+  text-align: right;
 }
 
 tr:nth-child(even) {
@@ -322,3 +339,5 @@ tr:nth-child(even) {
     color: $color;
   }
 }
+
+

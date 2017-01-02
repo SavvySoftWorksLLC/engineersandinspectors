@@ -15,9 +15,17 @@ $(document).ready(function(){
 
   $(".dropdown-button").dropdown();
 
-  $('.scrollspy').scrollSpy()
-  $('.scrollspy').scrollOffset();
+  $('.scrollspy').scrollSpy();
 
+  var footer_h = $('.footer').height()
+  var header_h = $('.header').outerHeight()
+  var window_h = $('.content').height()
+
+  $('.toc-wrapper').pushpin({
+    top: header_h + 20,
+    bottom: window_h - footer_h,
+    offset: header_h+ 20
+  });
 
 })
 
