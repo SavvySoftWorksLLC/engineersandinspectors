@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import url(https://fonts.googleapis.com/css?family=Audiowide);
-@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+@import 'https://fonts.googleapis.com/css?family=Audiowide';
+@import 'https://fonts.googleapis.com/css?family=Oxygen:400,700';
 @import 'https://fonts.googleapis.com/css?family=Ubuntu';
 @import 'https://fonts.googleapis.com/css?family=Quicksand';
 
@@ -47,7 +47,7 @@
 $darktext: #333333;
 $lighttext: #FFFFFF;
 $color: #004d40;
-// $color: #488286;
+// $color: #00bcd4;
 
 .material-icons {
   color: $lighttext;
@@ -144,16 +144,7 @@ nav {
 
 #sidenav-overlay {
   background-color: rgba(255, 255, 255, .25);
-}
-
-@media #{$medium-and-down}{
-  .side-nav a {
-      padding: 0 32px;
-  }
-}
-
-ul.side-nav.fixed ul.collapsible-accordion a.collapsible-header {
-  padding-left: 32px;
+  z-index: 1;
 }
 
 .content {
