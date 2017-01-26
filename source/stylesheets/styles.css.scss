@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
-@import 'https://fonts.googleapis.com/css?family=Audiowide';
-@import 'https://fonts.googleapis.com/css?family=Oxygen:400,700';
-@import 'https://fonts.googleapis.com/css?family=Ubuntu';
-@import 'https://fonts.googleapis.com/css?family=Quicksand';
+// @import 'https://fonts.googleapis.com/css?family=Audiowide';
+// @import 'https://fonts.googleapis.com/css?family=Oxygen:400,700';
+// @import 'https://fonts.googleapis.com/css?family=Ubuntu';
+// @import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import 'https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab';
 
 // Mixins
 @import "materialize/components/prefixer";
@@ -46,21 +47,17 @@
 
 $darktext: #333333;
 $lighttext: #FFFFFF;
-$color: #004d40;
-// $color: #00bcd4;
+// $color: #004d40;
+$color: #194C7F;
+$highlight-color: lighten($color, 30%);
+$gray-color: #405F7F;
+
+.waves-effect.waves-hightlight .waves-ripple {
+  background-color: $highlight-color;
+}
 
 .material-icons {
   color: $lighttext;
-}
-
- /*
-  When creating your CSS selector,
-  change "brown" to something of your choosing
-*/
-.waves-effect.waves-teal .waves-ripple {
- /* The alpha value allows the text and background color
- of the button to still show through. */
-  background-color: rgba(72, 130, 134, 0.8);
 }
 
 html, body, .block {
@@ -90,7 +87,7 @@ main {
 }
 
 .bold-color {
-  color: $color;
+  color: $highlight-color;
 }
 
 .text-center {
@@ -108,7 +105,8 @@ blockquote {
 
 .header {
   margin: 0 auto;
-  padding-bottom: 1em;
+  padding: 0em 1em 1em 1em;
+  font-family: 'Roboto Slab', serif;
   background-color: $color;
   color: $lighttext;
   text-align: center;
@@ -132,14 +130,31 @@ blockquote {
 }
 
 nav {
+  padding: 1em 1em 1em 1em;
   background-color: $color;
   color: $lighttext;
   box-shadow: none;
+  ul li a:hover {
+    background-color: $highlight-color;
+  }
+  .dropdown-content {
+    li a {
+      color: $color;
+    }
+    li a:hover {
+    background-color: $highlight-color;
+    color: $lighttext
+    }
+  }
 }
 
 .nav {
   background-color: $color;
   color: $lighttext;
+}
+
+nav .brand-logo {
+  font-size: 1.5em;
 }
 
 #sidenav-overlay {
@@ -169,10 +184,6 @@ nav {
 
 #contactBtn:hover {
 
-}
-
-nav .brand-logo {
-  font-size: 1.5em;
 }
 
 .logobar {
@@ -314,6 +325,24 @@ tr:nth-child(even) {
   background-color: #EEEEEE;
 }
 
+.enc-home {
+  table {
+    border: none;
+    // border-collapse: separate;
+    // border-spacing: 2px;
+  }
+  th, td {
+    background-color: $lighttext;
+    width: 33%;
+    // border: 1px solid $color;
+  }
+  a {
+    color: $color;
+  }
+  a:hover {
+    color: $highlight-color;
+  }
+}
 
 .enc li {
     padding: 0em 1em 0em 1em
