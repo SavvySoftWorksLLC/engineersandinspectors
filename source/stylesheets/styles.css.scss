@@ -5,6 +5,7 @@
 // @import 'https://fonts.googleapis.com/css?family=Ubuntu';
 // @import 'https://fonts.googleapis.com/css?family=Quicksand';
 @import 'https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab';
+@import 'https://fonts.googleapis.com/css?family=Cinzel';
 
 // Mixins
 @import "materialize/components/prefixer";
@@ -48,8 +49,10 @@
 $darktext: #333333;
 $lighttext: #FFFFFF;
 // $color: #004d40;
-$color: #194C7F;
-$highlight-color: lighten($color, 30%);
+// $color: #194C7F;
+$color: #3D6B99;
+$heading: #194C7F;
+$highlight-color: lighten($color, 25%);
 $gray-color: #405F7F;
 
 .waves-effect.waves-hightlight .waves-ripple {
@@ -66,7 +69,7 @@ html, body, .block {
 
 body {
   background-color: $color;
-  font-family: Helvetica, sans-serif;
+  font-family: Tahoma, Helvetica, sans-serif;
   font-size: 1.1em;
 }
 
@@ -104,13 +107,16 @@ blockquote {
 }
 
 .header {
+  font-size: 1.1em;
   margin: 0 auto;
   padding: 0em 1em 1em 1em;
-  font-family: 'Roboto Slab', serif;
   background-color: $color;
   color: $lighttext;
   text-align: center;
   h1 {
+    // text-transform: uppercase;
+    font-family: 'Cinzel', 'Roboto Slab', serif;
+    // font-size: 3em;
     color: $lighttext;
   }
   a {
@@ -222,7 +228,7 @@ nav .brand-logo {
 .sub-heading {
   padding-top: 1em;
   padding-bottom: 1em;
-  color: $color;
+  color: $heading;
 }
 
 .about {
@@ -340,6 +346,8 @@ tr:nth-child(even) {
     color: $color;
   }
   a:hover {
+    font-size: 1.15em;
+    padding-left: 1em;
     color: $highlight-color;
   }
 }

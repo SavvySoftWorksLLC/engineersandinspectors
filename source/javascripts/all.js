@@ -23,9 +23,9 @@ $(document).ready(function(){
   var window_h = $('.content').height()
 
   $('.toc-wrapper').pushpin({
-    top: header_h + 20,
+    top: header_h + 40,
     bottom: window_h - footer_h,
-    offset: header_h+ 20
+    offset: header_h+ 40
   });
 
 })
