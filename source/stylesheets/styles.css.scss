@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
-@import 'https://fonts.googleapis.com/css?family=Audiowide';
-@import 'https://fonts.googleapis.com/css?family=Oxygen:400,700';
-@import 'https://fonts.googleapis.com/css?family=Ubuntu';
-@import 'https://fonts.googleapis.com/css?family=Quicksand';
+// @import 'https://fonts.googleapis.com/css?family=Audiowide';
+// @import 'https://fonts.googleapis.com/css?family=Oxygen:400,700';
+// @import 'https://fonts.googleapis.com/css?family=Ubuntu';
+// @import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import 'https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab';
+@import 'https://fonts.googleapis.com/css?family=Cinzel';
 
 // Mixins
 @import "materialize/components/prefixer";
@@ -46,21 +48,19 @@
 
 $darktext: #333333;
 $lighttext: #FFFFFF;
-$color: #004d40;
-// $color: #00bcd4;
+// $color: #004d40;
+// $color: #194C7F;
+$color: #3D6B99;
+$heading: #194C7F;
+$highlight-color: lighten($color, 25%);
+$gray-color: #405F7F;
+
+.waves-effect.waves-hightlight .waves-ripple {
+  background-color: $highlight-color;
+}
 
 .material-icons {
   color: $lighttext;
-}
-
- /*
-  When creating your CSS selector,
-  change "brown" to something of your choosing
-*/
-.waves-effect.waves-teal .waves-ripple {
- /* The alpha value allows the text and background color
- of the button to still show through. */
-  background-color: rgba(72, 130, 134, 0.8);
 }
 
 html, body, .block {
@@ -69,7 +69,7 @@ html, body, .block {
 
 body {
   background-color: $color;
-  font-family: Helvetica, sans-serif;
+  font-family: Tahoma, Helvetica, sans-serif;
   font-size: 1.1em;
 }
 
@@ -90,7 +90,7 @@ main {
 }
 
 .bold-color {
-  color: $color;
+  color: $highlight-color;
 }
 
 .text-center {
@@ -107,12 +107,16 @@ blockquote {
 }
 
 .header {
+  font-size: 1.1em;
   margin: 0 auto;
-  padding-bottom: 1em;
+  padding: 0em 1em 1em 1em;
   background-color: $color;
   color: $lighttext;
   text-align: center;
   h1 {
+    // text-transform: uppercase;
+    font-family: 'Cinzel', 'Roboto Slab', serif;
+    // font-size: 3em;
     color: $lighttext;
   }
   a {
@@ -132,14 +136,31 @@ blockquote {
 }
 
 nav {
+  padding: 1em 1em 1em 1em;
   background-color: $color;
   color: $lighttext;
   box-shadow: none;
+  ul li a:hover {
+    background-color: $highlight-color;
+  }
+  .dropdown-content {
+    li a {
+      color: $color;
+    }
+    li a:hover {
+    background-color: $highlight-color;
+    color: $lighttext
+    }
+  }
 }
 
 .nav {
   background-color: $color;
   color: $lighttext;
+}
+
+nav .brand-logo {
+  font-size: 1.5em;
 }
 
 #sidenav-overlay {
@@ -169,10 +190,6 @@ nav {
 
 #contactBtn:hover {
 
-}
-
-nav .brand-logo {
-  font-size: 1.5em;
 }
 
 .logobar {
@@ -211,7 +228,7 @@ nav .brand-logo {
 .sub-heading {
   padding-top: 1em;
   padding-bottom: 1em;
-  color: $color;
+  color: $heading;
 }
 
 .about {
@@ -219,6 +236,9 @@ nav .brand-logo {
 }
 
 .pricing {
+  table {
+    max-width: 1024px;
+  }
   ul {
     padding-left: 2em;
   }
@@ -311,6 +331,26 @@ tr:nth-child(even) {
   background-color: #EEEEEE;
 }
 
+.enc-home {
+  table {
+    border: none;
+    // border-collapse: separate;
+    // border-spacing: 2px;
+  }
+  th, td {
+    background-color: $lighttext;
+    width: 33%;
+    // border: 1px solid $color;
+  }
+  a {
+    color: $color;
+  }
+  a:hover {
+    font-size: 1.15em;
+    padding-left: 1em;
+    color: $highlight-color;
+  }
+}
 
 .enc li {
     padding: 0em 1em 0em 1em
