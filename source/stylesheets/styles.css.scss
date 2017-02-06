@@ -231,6 +231,10 @@ nav .brand-logo {
   color: $heading;
 }
 
+.sub-heading-pricing {
+  color: $heading;
+}
+
 .about {
 
 }
@@ -318,8 +322,8 @@ td {
 }
 
 .table-header {
-  background-color: #F7AA47;
-  text-align:center;
+  background-color: $color;
+  color: $lighttext;
   border-radius: 0;
 }
 
