@@ -109,7 +109,7 @@ blockquote {
 .header {
   font-size: 1.1em;
   margin: 0 auto;
-  padding: 0em 1em 1em 1em;
+  padding: 0em 1em;
   background-color: $color;
   color: $lighttext;
   text-align: center;
@@ -118,12 +118,43 @@ blockquote {
     font-family: 'Cinzel', 'Roboto Slab', serif;
     // font-size: 3em;
     color: $lighttext;
+    margin: 0;
+    width: auto;
+    @media screen and (max-width:1200px) {
+        font-size: 3em;
+    }
   }
-  a {
-    color: $lighttext;
-  }
-  a:hover {
-    color: lighten($color, 50%);
+  a { color: $lighttext; }
+  a:hover { color: lighten($color, 50%); }
+  .col { padding:0; }
+  .home_page_head {
+    width: 100%;
+    height: 45px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: .5em 0;
+    h5 {
+      font-weight: 200;
+      font-size: .98em;
+      line-height: 1.5em;
+    }
+    ul {
+      margin: 0;
+      li {
+        display: inline;
+        text-decoration: none;
+        padding: 0;
+        text-align: center;
+        color: $lighttext;
+
+      }
+    } 
+    .row {
+      margin-bottom: 0;
+    }
+    h5 {
+      margin: 0;
+    }
   }
 }
 
@@ -136,21 +167,56 @@ blockquote {
 }
 
 nav {
-  padding: 1em 1em 1em 1em;
+  padding: 0 .5em;
   background-color: $color;
   color: $lighttext;
   box-shadow: none;
-  ul li a:hover {
+  height: 50px;
+  line-height: 3em;
+  a {
+    display:unset;
+  }
+  ul li:hover {
     background-color: $highlight-color;
   }
+  ul li a:hover {
+    background-color: transparent;
+
+  }
   .dropdown-content {
+    height: auto;
     li a {
       color: $color;
     }
-    li a:hover {
-    background-color: $highlight-color;
-    color: $lighttext
+    #contact-nav {
+      background-color:darken($color, 50%);
     }
+  }
+  .nav-wrapper {
+    height: 50px;
+    ul {height: 100%;}
+    ul li {height: 100%;}
+    ul li * {height: 100%;}
+    a {
+      height: 100%;
+      @media screen and (max-width:1200px) and (min-width: 990px) {
+        padding: .3em;
+      }
+    }
+    i {line-height: 2.1em; margin-left: 0;}
+    .brand-logo {
+      @media screen and (max-width:1050px) and (min-width: 994px) {
+        font-size: 1.4em;
+      }
+    }
+  }
+  .waves-effect {
+    display: inline;
+    position: unset;
+  }
+  .button-collapse i {
+    height: 100%;
+    line-height: 3em;
   }
 }
 
@@ -159,8 +225,14 @@ nav {
   color: $lighttext;
 }
 
+.navbar-fixed {
+  height: 50px;
+}
+
 nav .brand-logo {
   font-size: 1.5em;
+  font-family: 'Cinzel', 'Roboto Slab', serif;
+  font-weight: 500;
 }
 
 #sidenav-overlay {
@@ -212,17 +284,6 @@ nav .brand-logo {
   }
   display: block;
   position: relative; 
-}
-
-
-.home_page_head {
-  ul li {
-    display: inline;
-    text-decoration: none;
-    padding: 1em;
-    text-align: center;
-    color: $color;
-  }
 }
 
 .sub-heading {
@@ -305,9 +366,9 @@ nav .brand-logo {
     a {
       color: $lighttext;
     }
-  li {
-    padding-right: 2em;
-  }
+    li {
+      padding-right: 2em;
+    }
   }  
 }
 
@@ -366,7 +427,7 @@ tr:nth-child(even) {
   //width: 100%;
 }
 
-.returntotop:hover{
+.returntotop:hover {
   color: #FFFFFF;
   background-color: $lighttext;
   color: $color;
@@ -374,5 +435,6 @@ tr:nth-child(even) {
     color: $color;
   }
 }
+
 
 
