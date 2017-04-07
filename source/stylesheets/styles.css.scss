@@ -52,7 +52,9 @@ $lighttext: #FFFFFF;
 // $color: #194C7F;
 $color: #3D6B99;
 $heading: #194C7F;
+$bluetext: darken($color, 15%);
 $highlight-color: lighten($color, 25%);
+$darken-color: darken($color, 3%);
 $gray-color: #405F7F;
 
 .waves-effect.waves-hightlight .waves-ripple {
@@ -82,7 +84,10 @@ body {
 .content_container {
   margin: 0 auto;
   height: 100%;
-  width: 100%;
+  width: 75%;
+  @media only screen and (max-width:1100px) {
+    width: 95%;
+  }
 }
 
 main {
@@ -126,17 +131,21 @@ blockquote {
   }
   a { color: $lighttext; }
   a:hover { color: lighten($color, 50%); }
-  .col { padding:0; }
+  .col .hide-on-med-down{ 
+    padding:0;
+    margin-top:5px;
+  }
   .home_page_head {
     width: 100%;
     height: 45px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 4px double white;
+    border-bottom: 4px double white;
     padding: .5em 0;
+    margin-bottom: 10px;
     h5 {
       font-weight: 200;
       font-size: .98em;
-      line-height: 1.5em;
+      margin: 0;
     }
     ul {
       margin: 0;
@@ -151,9 +160,6 @@ blockquote {
     } 
     .row {
       margin-bottom: 0;
-    }
-    h5 {
-      margin: 0;
     }
   }
 }
@@ -173,6 +179,7 @@ nav {
   box-shadow: none;
   height: 50px;
   line-height: 3em;
+  margin-bottom: 10px;
   a {
     display:unset;
   }
@@ -188,19 +195,24 @@ nav {
     li a {
       color: $color;
     }
-    #contact-nav {
-      background-color:darken($color, 50%);
-    }
   }
   .nav-wrapper {
     height: 50px;
-    ul {height: 100%;}
+    ul {
+      height: 100%;
+      #contact-nav {
+        background-color:$darken-color;
+      }
+      #contact-nav:hover {
+        background-color: $highlight-color;
+      }
+    }
     ul li {height: 100%;}
-    ul li * {height: 100%;}
+    #dropdown1 {height: unset;}
     a {
       height: 100%;
       @media screen and (max-width:1200px) and (min-width: 990px) {
-        padding: .3em;
+        padding: .4em;
       }
     }
     i {line-height: 2.1em; margin-left: 0;}
@@ -289,7 +301,7 @@ nav .brand-logo {
 .sub-heading {
   padding-top: 1em;
   padding-bottom: 1em;
-  color: $heading;
+  color: $bluetext;
 }
 
 .sub-heading-pricing {
@@ -303,6 +315,7 @@ nav .brand-logo {
 .pricing {
   table {
     max-width: 1024px;
+    width: 100%;
   }
   ul {
     padding-left: 2em;
