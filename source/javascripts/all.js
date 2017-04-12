@@ -1,6 +1,16 @@
 //= require jquery
 //= require materialize-sprockets
 
+function toggleLogo() {
+  var header_h = $('#index-banner').height();
+    var scroll_h = $(window).scrollTop();
+    if(scroll_h >= header_h) {
+      $('.brand-logo').slideDown(500);
+    } else if(scroll_h <= header_h) {
+      $('.brand-logo').slideUp(500);
+    }
+}
+
 $(".button-collapse").sideNav();
 
 $(document).ready(function(){
@@ -28,23 +38,13 @@ $(document).ready(function(){
     offset: header_h+ 40
   });
 
-  $('.brand-logo').hide();
+  toggleLogo();
 
 })
 
-
 $(window).scroll(function (event) {
-    var header_h = 124;
-    var scroll_h = $(window).scrollTop();
-    if(scroll_h >= header_h) {
-      $('.brand-logo').slideDown(500);
-    } else if(scroll_h <= header_h) {
-      $('.brand-logo').slideUp(500);
-    }
+   toggleLogo();
 });
-
-
-
 
 // jQuery Scroll Animations
 $('a[href^="#"]').on('click', function(event) {
@@ -56,5 +56,3 @@ $('a[href^="#"]').on('click', function(event) {
         }, 250);
     }
 })
-
-
