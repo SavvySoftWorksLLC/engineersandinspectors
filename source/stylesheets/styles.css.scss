@@ -273,7 +273,11 @@ nav .brand-logo {
 }
 
 #contactBtn:hover {
+  
+}
 
+.btn, button {
+  background-color: $color;  
 }
 
 .logobar {
@@ -286,7 +290,7 @@ nav .brand-logo {
 }
 
 .footer {
-  padding-bottom: 2em;
+  padding-bottom: .5em;
   color: $lighttext;
   a {
     color: $lighttext;
