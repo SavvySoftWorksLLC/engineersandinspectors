@@ -283,10 +283,13 @@ nav .brand-logo {
 
 .logobar {
   margin: 0 auto;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
   background-color: $lighttext;
   .logos img {
-    padding: 1em;
+    padding: .6em;
+  }
+  .row {
+    margin-bottom: .5em;
   }
 }
 
@@ -305,7 +308,7 @@ nav .brand-logo {
 
 .sub-heading {
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 0;
   color: $bluetext;
 }
 
@@ -454,5 +457,21 @@ tr:nth-child(even) {
   }
 }
 
+p {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  -webkit-margin-before: .5em;
+  -webkit-margin-after: .5em;
+}
 
+#index-banner {
+  height: auto;
+}
 
+footer .row {
+  margin-bottom: 0;
+}
+
+.browser-default {
+  list-style-type: circle;
+}
