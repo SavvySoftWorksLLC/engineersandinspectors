@@ -489,3 +489,9 @@ h5 {
   font-size: 1.2em;
   margin-top: 1em;
 }
+
+.profile {
+  margin-bottom: 1em;
+  h5 { margin: .3em; }
+  h6 { color: $darktext; }
+}
