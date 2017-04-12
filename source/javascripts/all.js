@@ -35,13 +35,11 @@ $(document).ready(function(){
 
 $(window).scroll(function (event) {
     var header_h = 124;
-    console.log("Header: " + header_h);
     var scroll_h = $(window).scrollTop();
-    console.log("Scroll: " + scroll_h);
     if(scroll_h >= header_h) {
-      $('.brand-logo').show(500);
+      $('.brand-logo').slideDown(500);
     } else if(scroll_h <= header_h) {
-      $('.brand-logo').hide(500);
+      $('.brand-logo').slideUp(500);
     }
 });
 
