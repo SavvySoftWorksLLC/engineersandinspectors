@@ -310,6 +310,7 @@ nav .brand-logo {
   padding-top: 1em;
   padding-bottom: 0;
   color: $bluetext;
+  text-align: center;
 }
 
 .sub-heading-pricing {
@@ -480,4 +481,11 @@ footer .row {
 h5 {
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
+}
+
+.question {
+  color: $bluetext;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-top: 1em;
 }
