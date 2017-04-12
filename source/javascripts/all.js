@@ -28,7 +28,25 @@ $(document).ready(function(){
     offset: header_h+ 40
   });
 
+  $('.brand-logo').hide();
+
 })
+
+
+$(window).scroll(function (event) {
+    var header_h = 124;
+    console.log("Header: " + header_h);
+    var scroll_h = $(window).scrollTop();
+    console.log("Scroll: " + scroll_h);
+    if(scroll_h >= header_h) {
+      $('.brand-logo').show(500);
+    } else if(scroll_h <= header_h) {
+      $('.brand-logo').hide(500);
+    }
+});
+
+
+
 
 // jQuery Scroll Animations
 $('a[href^="#"]').on('click', function(event) {
@@ -40,3 +58,5 @@ $('a[href^="#"]').on('click', function(event) {
         }, 250);
     }
 })
+
+
