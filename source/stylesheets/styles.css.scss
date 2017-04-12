@@ -314,6 +314,7 @@ nav .brand-logo {
 
 .sub-heading-pricing {
   color: $heading;
+  margin: 0 auto;
 }
 
 .about {
@@ -474,4 +475,9 @@ footer .row {
 
 .browser-default {
   list-style-type: circle;
+}
+
+h5 {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
 }
