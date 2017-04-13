@@ -125,7 +125,7 @@ blockquote {
     color: $lighttext;
     margin: 0;
     width: auto;
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:1250px) {
         font-size: 3em;
     }
   }
@@ -165,7 +165,7 @@ blockquote {
 }
 
 .sam-info {
-  padding-right: 1em;
+  padding-right: 0;
   @media #{$medium-and-down} {
     padding-left: 1em;
     text-align: left;
@@ -499,4 +499,31 @@ h5 {
 
 .justified {
   text-align: justify;
+}
+
+.row .col {
+  padding: 0;
+}
+
+nav .button-collapse {
+  margin-left: 1em;
+}
+
+@media screen and (min-width: 0px) {
+  .header { padding: 0 6em; }
+  nav { padding-left: 6em;}
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1280px){
+  .header { padding: 0 4em; }
+  nav { padding-left: 6em;}
+}
+
+@media screen and (min-width: 993px) and (max-width:1099px) {
+  .header { padding: 0 2.3em; }
+  nav { padding-left: 2.3em;}
+}
+@media screen and (min-width: 0) and (max-width:992px) {
+  .header { padding: 0 .5em; }
+  nav { padding-left: .5em;}
 }
