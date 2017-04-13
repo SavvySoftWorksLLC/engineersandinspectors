@@ -109,6 +109,12 @@ blockquote {
 .serializableForm .input-field {
   padding-left: 2em;
   padding-right: 2em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+input[type=text]:focus:not([readonly]), input[type=email]:focus:not([readonly]) {
+  border-bottom: 1px solid $highlight-color;
 }
 
 .header {
@@ -279,6 +285,10 @@ nav .brand-logo {
 
 .btn, button, .btn:focus {
   background-color: $color;  
+}
+
+.btn:hover {
+  background-color: $highlight-color;
 }
 
 .logobar {
