@@ -52,7 +52,9 @@ $lighttext: #FFFFFF;
 // $color: #194C7F;
 $color: #3D6B99;
 $heading: #194C7F;
+$bluetext: darken($color, 15%);
 $highlight-color: lighten($color, 25%);
+$darken-color: darken($color, 3%);
 $gray-color: #405F7F;
 
 .waves-effect.waves-hightlight .waves-ripple {
@@ -82,7 +84,10 @@ body {
 .content_container {
   margin: 0 auto;
   height: 100%;
-  width: 100%;
+  width: 75%;
+  @media only screen and (max-width:1100px) {
+    width: 95%;
+  }
 }
 
 main {
@@ -104,12 +109,18 @@ blockquote {
 .serializableForm .input-field {
   padding-left: 2em;
   padding-right: 2em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+input[type=text]:focus:not([readonly]), input[type=email]:focus:not([readonly]) {
+  border-bottom: 1px solid $highlight-color;
 }
 
 .header {
   font-size: 1.1em;
   margin: 0 auto;
-  padding: 0em 1em 1em 1em;
+  padding: 0em 1em;
   background-color: $color;
   color: $lighttext;
   text-align: center;
@@ -118,17 +129,49 @@ blockquote {
     font-family: 'Cinzel', 'Roboto Slab', serif;
     // font-size: 3em;
     color: $lighttext;
+    margin: 0;
+    width: auto;
+    @media screen and (max-width:1250px) {
+        font-size: 3em;
+    }
   }
-  a {
-    color: $lighttext;
+  a { color: $lighttext; }
+  a:hover { color: lighten($color, 50%); }
+  .col .hide-on-med-down{ 
+    padding:0;
+    margin-top:5px;
   }
-  a:hover {
-    color: lighten($color, 50%);
+  .home_page_head {
+    width: 100%;
+    height: 45px;
+    border-top: 4px double white;
+    border-bottom: 4px double white;
+    padding: .5em 0;
+    margin-bottom: 10px;
+    h5 {
+      font-weight: 200;
+      font-size: .98em;
+      margin: 0;
+    }
+    ul {
+      margin: 0;
+      li {
+        display: inline;
+        text-decoration: none;
+        padding: 0;
+        text-align: center;
+        color: $lighttext;
+
+      }
+    } 
+    .row {
+      margin-bottom: 0;
+    }
   }
 }
 
 .sam-info {
-  padding-right: 1em;
+  padding-right: 0;
   @media #{$medium-and-down} {
     padding-left: 1em;
     text-align: left;
@@ -136,21 +179,62 @@ blockquote {
 }
 
 nav {
-  padding: 1em 1em 1em 1em;
+  padding: 0 .5em;
   background-color: $color;
   color: $lighttext;
   box-shadow: none;
-  ul li a:hover {
+  height: 50px;
+  line-height: 3em;
+  margin-bottom: 10px;
+  a {
+    display:unset;
+  }
+  ul li:hover {
     background-color: $highlight-color;
   }
+  ul li a:hover {
+    background-color: transparent;
+
+  }
   .dropdown-content {
+    height: auto;
     li a {
       color: $color;
     }
-    li a:hover {
-    background-color: $highlight-color;
-    color: $lighttext
+  }
+  .nav-wrapper {
+    height: 50px;
+    ul {
+      height: 100%;
+      #contact-nav {
+        background-color:$darken-color;
+      }
+      #contact-nav:hover {
+        background-color: $highlight-color;
+      }
     }
+    ul li {height: 100%;}
+    #dropdown1 {height: unset;}
+    a {
+      height: 100%;
+      @media screen and (max-width:1200px) and (min-width: 990px) {
+        padding: .4em;
+      }
+    }
+    i {line-height: 2.1em; margin-left: 0;}
+    .brand-logo {
+      @media screen and (max-width:1050px) and (min-width: 994px) {
+        font-size: 1.4em;
+      }
+    }
+  }
+  .waves-effect {
+    display: inline;
+    position: unset;
+  }
+  .button-collapse i {
+    height: 100%;
+    line-height: 3em;
   }
 }
 
@@ -159,8 +243,15 @@ nav {
   color: $lighttext;
 }
 
+.navbar-fixed {
+  height: 50px;
+}
+
 nav .brand-logo {
   font-size: 1.5em;
+  font-family: 'Cinzel', 'Roboto Slab', serif;
+  font-weight: 500;
+  display: none;
 }
 
 #sidenav-overlay {
@@ -189,20 +280,31 @@ nav .brand-logo {
 }
 
 #contactBtn:hover {
+  
+}
 
+.btn, button, .btn:focus {
+  background-color: $color;  
+}
+
+.btn:hover {
+  background-color: $highlight-color;
 }
 
 .logobar {
   margin: 0 auto;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
   background-color: $lighttext;
   .logos img {
-    padding: 1em;
+    padding: .6em;
+  }
+  .row {
+    margin-bottom: .5em;
   }
 }
 
 .footer {
-  padding-bottom: 2em;
+  padding-bottom: .5em;
   color: $lighttext;
   a {
     color: $lighttext;
@@ -214,25 +316,16 @@ nav .brand-logo {
   position: relative; 
 }
 
-
-.home_page_head {
-  ul li {
-    display: inline;
-    text-decoration: none;
-    padding: 1em;
-    text-align: center;
-    color: $color;
-  }
-}
-
 .sub-heading {
   padding-top: 1em;
-  padding-bottom: 1em;
-  color: $heading;
+  padding-bottom: 0;
+  color: $bluetext;
+  text-align: center;
 }
 
 .sub-heading-pricing {
   color: $heading;
+  margin: 0 auto;
 }
 
 .about {
@@ -242,6 +335,7 @@ nav .brand-logo {
 .pricing {
   table {
     max-width: 1024px;
+    width: 100%;
   }
   ul {
     padding-left: 2em;
@@ -305,9 +399,9 @@ nav .brand-logo {
     a {
       color: $lighttext;
     }
-  li {
-    padding-right: 2em;
-  }
+    li {
+      padding-right: 2em;
+    }
   }  
 }
 
@@ -366,7 +460,7 @@ tr:nth-child(even) {
   //width: 100%;
 }
 
-.returntotop:hover{
+.returntotop:hover {
   color: #FFFFFF;
   background-color: $lighttext;
   color: $color;
@@ -375,4 +469,71 @@ tr:nth-child(even) {
   }
 }
 
+p {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  -webkit-margin-before: .5em;
+  -webkit-margin-after: .5em;
+}
 
+#index-banner {
+  height: auto;
+}
+
+footer .row {
+  margin-bottom: 0;
+}
+
+.browser-default {
+  list-style-type: circle;
+}
+
+h5 {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+}
+
+.question {
+  color: $bluetext;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.profile {
+  margin-bottom: 1em;
+  vertical-align: text-top;
+  h5 { margin: .3em; }
+  h6 { color: $darktext; }
+}
+
+.justified {
+  text-align: justify;
+}
+
+.row .col {
+  padding: 0;
+}
+
+nav .button-collapse {
+  margin-left: 1em;
+}
+
+@media screen and (min-width: 0px) {
+  .header { padding: 0 6em; }
+  nav { padding-left: 6em;}
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1280px){
+  .header { padding: 0 4em; }
+  nav { padding-left: 6em;}
+}
+
+@media screen and (min-width: 993px) and (max-width:1099px) {
+  .header { padding: 0 2.3em; }
+  nav { padding-left: 2.3em;}
+}
+@media screen and (min-width: 0) and (max-width:992px) {
+  .header { padding: 0 .5em; }
+  nav { padding-left: .5em;}
+}
