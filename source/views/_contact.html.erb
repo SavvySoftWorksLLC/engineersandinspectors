@@ -1,0 +1,44 @@
+<div id="contact" class="contact">
+  <!-- Modal Trigger -->
+  <a id="contactBtn" class="waves-effect waves-light btn" href="#modal1">CONTACT US</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5>Contact Us:</h5>
+    </div>
+    <div class="row">
+      <form class="serializableForm col s12" method="post" action="https://remailer.savvysoftworks.com">
+        <input type="hidden" name="public_token" value="7e847d4468bcd3562ac3401b4ae576eeb483f72be648df9c37a81fa54e60ef09">
+        <input type="hidden" name="after_success" value="http://engineersandinspectors.com/index.html"/>
+        <input type="hidden" name="after_failure" value="http://engineersandinspectors.com/index.html"/>
+        <div class="input-field">
+          <input id="name" placeholder="Name" name="name" type="text" class="validate">
+        </div>
+        <div class="input-field">
+          <input id="email" placeholder="Email" name="email" type="email" class="validate">
+        </div>
+        <div class="input-field">
+          <input id="street" placeholder="Street" name="street" type="text" class="">
+        </div>
+        <div class="input-field">
+          <input id="city" placeholder="City" name="city" type="text" class="">
+        </div>
+        <div class="input-field">
+          <input id="state" placeholder="State" name="state" type="text" class="">
+        </div>
+        <div class="input-field">
+          <input id="zipcode" placeholder="Zip Code" name="zipcode" type="text" class="">
+        </div>
+        <div class="input-field">
+          <input id="phone" placeholder="Phone" name="phone" type="text" class="validate">
+        </div>
+        <div class="modal-footer">
+          <button id="submit" class="btn waves-effect waves-light submit" type="submit">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

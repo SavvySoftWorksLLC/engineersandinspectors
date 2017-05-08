@@ -1,0 +1,94 @@
+<div>
+  <div class="navbar-fixed">
+    <nav id="nav">
+      <div class="nav-wrapper valign-wrapper">
+        <a href="/index.html" class="brand-logo right">Engineers and Inspectors</a>
+
+        <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a class="waves-effect waves-highlight" href="/index.html">Home</a></li>
+          <li><a class="waves-effect waves-highlight" href="/about.html">About</a></li>
+          <li><a class="waves-effect waves-highlight" href="/services.html">Services</a></li>
+          <li><a class="waves-effect waves-highlight" href="/references.html">References</a></li>
+          <li><a class="waves-effect waves-highlight" href="/pricing.html">Pricing</a></li>
+          <li><a class="waves-effect waves-highlight" href="/faq.html">FAQ</a></li>
+          <li>
+            <!-- Dropdown Trigger -->
+            <a class="dropdown-button waves-effect waves-highlight" href="#" data-activates="dropdown1">Homeowner's Encyclopedia
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>  
+          <li id="contact-nav"><a href="/contact.html" class="waves-effect waves-highlight">Contact Us</a></li>
+        </ul>
+        
+        <!-- Mobile Nav -->
+        <ul id="mobile-nav" class="side-nav">
+          <li><a class="waves-effect waves-highlight" href="/index.html">Home</a></li>
+          <li><a class="waves-effect waves-highlight" href="/about.html">About</a></li>
+          <li><a class="waves-effect waves-highlight" href="/services.html">Services</a></li>
+          <li><a class="waves-effect waves-highlight" href="/references.html">References</a></li>
+          <li><a class="waves-effect waves-highlight" href="/pricing.html">Pricing</a></li>
+          <li><a class="waves-effect waves-highlight" href="/faq.html">FAQ</a></li>
+          <li><a class="waves-effect waves-highlight" href="/contact.html">Contact Us</a></li>
+          <li><a class="waves-effect waves-highlight" href="/encyclopedia_menu.html">Homeowner's Encyclopedia</a></li>
+        </ul>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a class="waves-effect waves-highlight" href="/views_encyclopedia/whatsinvolved.html">What's Involved in a Home Inspection</a></li>
+          <li><a class="waves-effect waves-highlight" href="/encyclopedia_menu.html">Encyclopedia Home</a></li>
+          <li><a class="waves-effect waves-highlight" href="/views_encyclopedia/about_radon.html">Radon</a></li>
+          <li><a class="waves-effect waves-highlight" href="/views_encyclopedia/septic.html">Septic Systems</a></li>
+          <li><a class="waves-effect waves-highlight" href="/views_encyclopedia/about_mold.html">Mold</a></li>
+          <li><a class="waves-effect waves-highlight" href="/views_encyclopedia/wells.html">Wells</a></li>
+        </ul>
+      
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div id="contact" class="contact">
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5>Contact Us:</h5>
+    </div>
+    <div class="row">
+      <form class="serializableForm col s12" method="post" action="https://remailer.savvysoftworks.com">
+        <input type="hidden" name="public_token" value="7e847d4468bcd3562ac3401b4ae576eeb483f72be648df9c37a81fa54e60ef09">
+        <input type="hidden" name="after_success" value="http://engineersandinspectors.com/index.html"/>
+        <input type="hidden" name="after_failure" value="http://engineersandinspectors.com/index.html"/>
+        <div class="input-field">
+          <input id="name" placeholder="Name" name="name" type="text" class="validate">
+        </div>
+        <div class="input-field">
+          <input id="email" placeholder="Email" name="email" type="email" class="validate">
+        </div>
+        <div class="input-field">
+          <input id="street" placeholder="Street" name="street" type="text" class="">
+        </div>
+        <div class="input-field">
+          <input id="city" placeholder="City" name="city" type="text" class="">
+        </div>
+        <div class="input-field">
+          <input id="state" placeholder="State" name="state" type="text" class="">
+        </div>
+        <div class="input-field">
+          <input id="zipcode" placeholder="Zip Code" name="zipcode" type="text" class="">
+        </div>
+        <div class="input-field">
+          <input id="phone" placeholder="Phone" name="phone" type="text" class="validate">
+        </div>
+        <div class="input-field">
+          <textarea id="textarea1" placeholder="Request an appointment, request a quote..." name="textarea" class="materialize-textarea" length="240"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button id="submit" class="btn waves-effect waves-light submit" type="submit">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

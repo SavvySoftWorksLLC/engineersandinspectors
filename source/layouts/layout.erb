@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="description" content="Engineers and Inspectors, ASHI Certified, Commercial, and Industrial Inspector. The best professional inspection available! Call today 724-875-3400">
+    <meta name="keywords" contents="ashi,certified,home,commercial,industrial,inspector,mold,radon,air,quality,inspection,real,estate">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Engineers and Inspectors" %></title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <%= stylesheet_link_tag :styles %>
+  </head>
+
+  <body>
+    <div id="top"></div>
+    <%= partial "views/nav" %>
+    <main>
+      <%= partial "views/header" %>
+      
+      <%= yield %>
+
+      <%= partial "views/logobar" %>
+      <%= partial "views/footer" %>
+
+    </main>
+
+    <%= javascript_include_tag :all %>
+  </body>
+</html>
