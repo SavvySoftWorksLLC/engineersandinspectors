@@ -3,12 +3,17 @@
 
 function toggleLogo() {
   var header_h = $('#index-banner').height();
-    var scroll_h = $(window).scrollTop();
+  var scroll_h = $(window).scrollTop();
+  var screenSize = window.innerWidth
+  if(screenSize >= 769) {    
     if(scroll_h >= header_h) {
       $('.brand-logo').slideDown(500);
     } else if(scroll_h <= header_h) {
       $('.brand-logo').slideUp(500);
     }
+  } else {
+    $('.brand-logo').slideDown(500);
+  }
 }
 
 $(".button-collapse").sideNav();
@@ -39,6 +44,7 @@ $(document).ready(function(){
   });
 
   toggleLogo();
+
 
 })
 
