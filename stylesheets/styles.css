@@ -6478,10 +6478,6 @@ nav {
         background-color: #39638e; }
       nav .nav-wrapper ul #contact-nav:hover {
         background-color: #87abcf; }
-    nav .nav-wrapper ul li {
-      height: 100%; }
-    nav .nav-wrapper #dropdown1 {
-      height: unset; }
     nav .nav-wrapper a {
       height: 100%; }
       @media screen and (max-width: 1200px) and (min-width: 990px) {
@@ -6490,9 +6486,14 @@ nav {
     nav .nav-wrapper i {
       line-height: 2.1em;
       margin-left: 0; }
-    @media screen and (max-width: 1050px) and (min-width: 994px) {
-      nav .nav-wrapper .brand-logo {
-        font-size: 1.4em; } }
+    nav .nav-wrapper .brand-logo {
+      padding-top: .8em; }
+      @media screen and (max-width: 1050px) and (min-width: 994px) {
+        nav .nav-wrapper .brand-logo {
+          font-size: 1.4em; } }
+      @media screen and (max-width: 768px) {
+        nav .nav-wrapper .brand-logo {
+          font-size: 1.1em; } }
   nav .waves-effect {
     display: inline;
     position: unset; }
