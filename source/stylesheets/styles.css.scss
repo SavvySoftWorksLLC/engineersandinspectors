@@ -197,7 +197,6 @@ nav {
 
   }
   .dropdown-content {
-    height: auto;
     li a {
       color: $color;
     }
@@ -205,7 +204,6 @@ nav {
   .nav-wrapper {
     height: 50px;
     ul {
-      height: 100%;
       #contact-nav {
         background-color:$darken-color;
       }
@@ -213,8 +211,8 @@ nav {
         background-color: $highlight-color;
       }
     }
-    // ul li {height: 100%;}
-    // #dropdown1 {height: unset;}
+    ul li {height: 100%;}
+    #dropdown1 {height: unset;}
     a {
       height: 100%;
       @media screen and (max-width:1200px) and (min-width: 990px) {
@@ -223,7 +221,7 @@ nav {
     }
     i {line-height: 2.1em; margin-left: 0;}
     .brand-logo {
-      padding-top: .8em;
+      padding-top: 0.2em;
       @media screen and (max-width:1050px) and (min-width: 994px) {
         font-size: 1.4em;
       }
