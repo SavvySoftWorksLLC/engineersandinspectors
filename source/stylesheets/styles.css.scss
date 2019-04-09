@@ -211,8 +211,6 @@ nav {
         background-color: $highlight-color;
       }
     }
-    ul li {height: 100%;}
-    #dropdown1 {height: unset;}
     a {
       height: 100%;
       @media screen and (max-width:1200px) and (min-width: 990px) {
@@ -221,7 +219,7 @@ nav {
     }
     i {line-height: 2.1em; margin-left: 0;}
     .brand-logo {
-      padding-top: 0.2em;
+      padding-top: 0.8em;
       @media screen and (max-width:1050px) and (min-width: 994px) {
         font-size: 1.4em;
       }
